@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background: rgb(200,200,255);
+            font: normal 20pt Arial, sans-serif;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id = "area">
+    <!-- <div id = "area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+                                                         - Caso fosse deixado no HTML -->
+        Interaja.
+    </div>
+
+    <script>
+        var switchClick = false
+        var area = document.getElementById("area"); // Cuidar com a memória alocada
+
+        area.addEventListener("click", clicar); // Adicionando evento via JS
+        area.addEventListener("mouseenter", entrar);
+        area.addEventListener("mouseout", sair);
+
+        function clicar() {
+            area.style.background = "red";
+            if (switchClick == false) {
+                area.style.lineHeight = "200px";
+                area.innerText = "Clicou!";
+                switchClick = true;
+            } else {
+                area.style.lineHeight = "100px";
+                area.innerText = "Clicou novamente!";
+                switchClick = false;
+            }
+
+        }
+
+        function entrar() {
+            area.style.lineHeight = "200px";
+            area.innerText = "Entrou!";
+        }
+
+        function sair() {
+            area.style.lineHeight = "200px";
+            area.innerText = "Saiu!";
+            area.style.background = "green";
+        }
+    </script>
+</body>
+</html>

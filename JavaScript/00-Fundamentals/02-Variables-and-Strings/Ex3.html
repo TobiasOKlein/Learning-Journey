@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa</title>
+    <style>
+        body { /* Definindo a fonte de texto */
+            background-color: #470b8b;
+            color: white;
+            font: normal 16pt Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            color: #ffe600;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Olá, mundo!</h1>
+    <p style="text-align: center;" id="primeiroTexto">Lorem ipsum não sei o que</p>
+    <!-- Entrando no JavaScript -->
+    <script> // Aqui a gente programa em JS
+        var num1 = window.prompt("Digite o primeiro número:")
+        var num2 = window.prompt("Digite o segundo número:")
+        var somaErrada = num1 + num2 // Isso é uma concatenação de strings!
+        window.alert("A soma errada dos números é: " + somaErrada)
+        var somaCerta = Number.parseFloat(num1) + parseFloat(num2) // Convertendo para número decimal
+        window.alert("A soma certa dos números é: " + somaCerta)
+        var assimTambemFunciona = Number(num1) + Number(num2) // Convertendo para número
+        window.alert("A soma com conversão automática do JS é: " + assimTambemFunciona)
+        alert(`Usando template string, a soma de ${num1} e ${num2} é: ${somaCerta}`) // Template string (crase)
+    </script>
+</body>
+</html>

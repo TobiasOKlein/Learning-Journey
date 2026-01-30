@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa</title>
+    <style>
+        body { /* Definindo a fonte de texto */
+            background-color: #470b8b;
+            color: white;
+            font: normal 16pt Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            color: #ffe600;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Olá, mundo!</h1>
+    <p style="text-align: center;" id="primeiroTexto">Lorem ipsum não sei o que</p>
+    <!-- Entrando no JavaScript -->
+    <script> // Aqui a gente programa em JS
+        var sNome = prompt("Qual o seu nome?")
+        alert("Olá, " + sNome + "! Seja bem-vindo(a)!") // Concatenação de strings
+        var recebe = document.querySelector('#primeiroTexto'); // Seleciona o primeiro elemento <p>
+        recebe.innerHTML = "Usuário ativo: " + sNome; // Altera o conteúdo do texto
+    </script>
+</body>
+</html>
