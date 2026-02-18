@@ -1,0 +1,89 @@
+### --- C / C++ & General Build --- ###
+# Compilação e Binários
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.exe
+*.out
+*.app
+*.so
+*.dll
+*.dylib
+
+# Build Directories
+build/
+Debug/
+Release/
+[Bb]in/
+[Oo]bj/
+
+# CMake / Make
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+Makefile
+*.ninja
+.ninja_deps
+.ninja_log
+
+
+### --- STM32CubeIDE / Eclipse --- ###
+# Ignora artefatos de build específicos do Eclipse
+.settings/
+# Nota: Geralmente mantemos .project e .cproject para que o projeto 
+# possa ser importado por outros no CubeIDE.
+
+
+### --- Python --- ###
+# Byte-compiled / optimized / DLLs
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes Virtuais (Crucial)
+.venv/
+venv/
+ENV/
+env/
+
+# Data Science / Jupyter
+.ipynb_checkpoints/
+.cache/
+
+# Distribuição / Pacotes
+dist/
+build/
+*.egg-info/
+
+
+### --- JavaScript / HTML / Web --- ###
+# Dependências
+node_modules/
+jspm_packages/
+
+# Logs e builds de frameworks
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+out/
+.env
+.next/
+
+
+### --- Sistema Operacional (Limpeza) --- ###
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
