@@ -31,6 +31,11 @@ Makefile
 .ninja_deps
 .ninja_log
 
+# Qt Creator
+*.user
+*.user.*
+.qtcreator/
+project.json
 
 ### --- STM32CubeIDE / Eclipse --- ###
 # Ignora artefatos de build específicos do Eclipse
