@@ -23,6 +23,7 @@ Release/
 
 # CMake / Make
 CMakeCache.txt
+CMakeLists.txt
 CMakeFiles/
 CMakeScripts/
 cmake_install.cmake
