@@ -1,6 +1,8 @@
-# Learning-Journey 🚀
+# Learning-Journey 🚀 (Work in Progress 🚧)
 
 A structured technical laboratory documenting my evolution in Computer Science and Software Development. This repository serves as a centralized hub for my academic exercises, personal experiments, and professional growth.
+
+🚧 In the process of migrating, documenting, and organizing a large backlog of code from my previous experiences and personal projects. 🚧
 
 ## 🗂️ Proficiency Levels
 
@@ -14,4 +16,4 @@ To better organize my progress, I categorize my work into six distinct levels ba
 - **Level 05 - Deep Tech:** Capstone projects, advanced mathematical simulations, and complex systems requiring significant research and development.
 
 ---
-*Maintained by [Tobias Ocean Klein]* *Computer Science Student at UNISINOS*
+*Maintained by [\[Tobias Ocean Klein\]](https://www.linkedin.com/in/tobiaskleinsteyer/)* *Computer Science Student at UNISINOS*
